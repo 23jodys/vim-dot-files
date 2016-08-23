@@ -1,0 +1,52 @@
+snippet doc
+__author__ = "Jody Stephens"
+__copyright__ = "Copyright ${1:`date +%Y`}, ArcherDX"
+__credits__ = ["Jody Stephens"]
+__maintainer__ = "Jody Stephens"
+__email__ = "jstephens@archerdx.com"
+endsnippet
+
+snippet class
+class ${1:Name}(${2:object}):
+    def __init__(self, $3):
+        super($1, self).__init__($3)
+endsnippet
+
+snippet cdef
+@classmethod
+def $1(cls, $2):
+    $0
+endsnippet
+
+snippet def
+def $1(self, $2):
+    
+endsnippet
+
+snippet set
+self.$1 = $1
+endsnippet
+
+snippet kw
+$1=$1,
+endsnippet
+
+snippet ds
+"""$1
+$0
+"""
+endsnippet
+
+snippet pa
+:param ${1:type} ${2:name}: $0
+endsnippet
+
+snippet pr
+@property
+def $1(self):
+    return self._$1
+
+@$1.setter
+def $1(self, value):
+    self._$1 = value
+endsnippet
