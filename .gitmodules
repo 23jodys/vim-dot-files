@@ -52,3 +52,12 @@
 [submodule "jedi-vim"]
 	path = jedi-vim
 	url = bundle/jedi-vim/
+[submodule "bundle/github-issues.vim"]
+	path = bundle/github-issues.vim
+	url = git@github.com:jaxbot/github-issues.vim.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = https://github.com/fs111/pydoc.vim
