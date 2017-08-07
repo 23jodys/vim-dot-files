@@ -1,5 +1,5 @@
 " For running tests remotely
-set makeprg=remote_nosetests.py\ %
+" set makeprg=remote_nosetests.py\ %
 
 " Copied from klen/python-mode
 "

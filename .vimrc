@@ -16,6 +16,7 @@ syntax on
 
 colorscheme solarized
 set background=light
+"set background=dark
 
 let mapleader = "\<Space>"
 
@@ -64,6 +65,8 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_pylint_post_args="--max-line-length=120"
 let g:syntastic_python_flake8_args='--ignore=E501'
 
+let g:syntastic_rst_checkers = ["sphinx"]
+
 let g:github_access_token = "ffc594f1ea30e3e29d39c25bc05cf7ea386c92fa"
 let g:github_upstream_issues = 1
 
@@ -82,3 +85,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
 
+" let g:netrw_liststyle = 3
+" let g:netrw_banner = 0
+" let g:netrw_winsize = 25
+"let g:netrw_browse_split = 1
