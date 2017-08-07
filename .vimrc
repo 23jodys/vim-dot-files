@@ -67,9 +67,6 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 
 let g:syntastic_rst_checkers = ["sphinx"]
 
-let g:github_access_token = "ffc594f1ea30e3e29d39c25bc05cf7ea386c92fa"
-let g:github_upstream_issues = 1
-
 " vim-airline
 set laststatus=2 " Show status immediately
 let g:airline_section_warning=""
