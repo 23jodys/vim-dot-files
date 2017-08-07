@@ -49,3 +49,9 @@
 [submodule "bundle/csv.vim"]
 	path = bundle/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
+[submodule "bundle/vim-rst-sections"]
+	path = bundle/vim-rst-sections
+	url = git@github.com:matthew-brett/vim-rst-sections.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git

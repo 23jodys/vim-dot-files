@@ -1,0 +1,56 @@
+snippet req
+
+.. item:: $1 [$2]
+
+   $0
+
+endsnippet
+
+snippet 62
+(62304:2006 $1)
+endsnippet
+
+
+snippet spec
+
+.. _$1:
+
+:Tag: $1
+:Short: $2
+:Trace: $3
+:Description: $0
+
+endsnippet
+
+snippet def
+
+.. _$1:
+
+$1
+  $0
+
+endsnippet
+
+snippet defref
+:ref:\`$1 <$1>\`
+endsnippet
+
+snippet header
+.. _$1:
+
+$1
+
+endsnippet
+
+snippet stimulus
+
+.. _$1:
+
+#. $1
+  :Description:
+
+endsnippet
+
+snippet vim
+.. vim: set tabstop=3 sw=3 filetype=rst:
+endsnippet
