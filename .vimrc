@@ -14,9 +14,6 @@ filetype plugin indent on
 filetype on
 syntax on
 
-colorscheme solarized
-set background=light
-
 let mapleader = "\<Space>"
 
 set spell
@@ -81,4 +78,10 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
+" Grade/Syntastic
+let g:syntastic_java_checkers=['javac']
+let g:syntastic_java_javac_config_file_enabled = 1
 
+" Javacomplete
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+set completeopt=longest,menuone
