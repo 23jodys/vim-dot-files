@@ -14,6 +14,10 @@ filetype plugin indent on
 filetype on
 syntax on
 
+colorscheme solarized
+"set background=light
+set background=dark
+
 let mapleader = "\<Space>"
 
 set spell
@@ -61,8 +65,7 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_pylint_post_args="--max-line-length=120"
 let g:syntastic_python_flake8_args='--ignore=E501'
 
-let g:github_access_token = "ffc594f1ea30e3e29d39c25bc05cf7ea386c92fa"
-let g:github_upstream_issues = 1
+let g:syntastic_rst_checkers = ["sphinx"]
 
 " vim-airline
 set laststatus=2 " Show status immediately
@@ -82,6 +85,13 @@ let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:syntastic_java_checkers=['javac']
 let g:syntastic_java_javac_config_file_enabled = 1
 
+<<<<<<< HEAD
 " Javacomplete
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 set completeopt=longest,menuone
+=======
+" let g:netrw_liststyle = 3
+" let g:netrw_banner = 0
+" let g:netrw_winsize = 25
+"let g:netrw_browse_split = 1
+>>>>>>> 818d806276b6903635a93db5ba33382fe86d2879

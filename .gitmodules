@@ -1,15 +1,9 @@
-[submodule "bundle/github-issues.vim"]
-	path = bundle/github-issues.vim
-	url = git@github.com:jaxbot/github-issues.vim.git
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/pydoc.vim"]
 	path = bundle/pydoc.vim
 	url = https://github.com/fs111/pydoc.vim
-[submodule "bundle/ropevim"]
-	path = bundle/ropevim
-	url = https://github.com/python-rope/ropevim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -49,6 +43,12 @@
 [submodule "bundle/vim-yaml"]
 	path = bundle/vim-yaml
 	url = https://github.com/avakhov/vim-yaml
-[submodule "bundle/vim-javacomplete2"]
-	path = bundle/vim-javacomplete2
-	url = https://github.com/artur-shaik/vim-javacomplete2.git
+[submodule "bundle/csv.vim"]
+	path = bundle/csv.vim
+	url = https://github.com/chrisbra/csv.vim.git
+[submodule "bundle/vim-rst-sections"]
+	path = bundle/vim-rst-sections
+	url = git@github.com:matthew-brett/vim-rst-sections.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git
