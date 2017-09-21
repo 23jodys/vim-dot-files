@@ -1,25 +1,28 @@
 snippet req
-
-.. item:: $1 [$2]
+.. item:: $1 $2
 
    $0
-
 endsnippet
 
-snippet 62
-(62304:2006 $1)
+snippet haz
+.. item:: CIHAZ$1 $2
+
+   $0
 endsnippet
 
+snippet rsk
+.. item:: CIRSK$1 $2
+
+   $0
+endsnippet
 
 snippet spec
+.. item:: CISDS$1 $2
 
-.. _$1:
-
-:Tag: $1
-:Short: $2
-:Trace: $3
-:Description: $0
-
+   $0
+endsnippet
+snippet 62
+(62304:2006 $1)
 endsnippet
 
 snippet def
@@ -35,22 +38,21 @@ snippet defref
 :ref:\`$1 <$1>\`
 endsnippet
 
-snippet header
-.. _$1:
-
-$1
-
+snippet termref
+:term:`$1`
 endsnippet
 
-snippet stimulus
-
-.. _$1:
-
-#. $1
-  :Description:
-
+snippet term
+  $1
+    $0
 endsnippet
 
-snippet vim
-.. vim: set tabstop=3 sw=3 filetype=rst:
+snippet vimrst
+.. vim: set tabstop=2 sw=2 filetype=rst:
+endsnippet
+
+snippet shell
+.. code-block:: shell
+  
+  $0
 endsnippet
