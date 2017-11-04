@@ -89,3 +89,21 @@ snippet icv
 
   $0
 endsnippet
+
+snippet raiser
+try:
+    import $1
+except ImportError as import_error:
+    $1 = delayed_raiser(import_error)
+endsnippet
+
+snippet draiser
+try:
+    from $1 import $2
+except ImportError as import_error:
+    $2 = delayed_raiser(import_error)
+endsnippet
+
+snippet s
+$1=self.$1,
+endsnippet
