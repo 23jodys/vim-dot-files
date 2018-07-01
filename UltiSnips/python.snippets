@@ -1,13 +1,11 @@
 snippet future
-from __future__ import print_function, division
+from __future__ import print_function, division, absolute_import
 endsnippet
 
 snippet doc
 __author__ = "Jody Stephens"
 __copyright__ = "Copyright ${1:`date +%Y`}, ArcherDX"
 __credits__ = ["Jody Stephens"]
-__maintainer__ = "Jody Stephens"
-__email__ = "jstephens@archerdx.com"
 endsnippet
 
 snippet class
@@ -29,6 +27,11 @@ endsnippet
 snippet def
 def $1(self, $2):
     
+endsnippet
+
+snippet tm
+def test_$1(self):
+    """$0"""
 endsnippet
 
 snippet set

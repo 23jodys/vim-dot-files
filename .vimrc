@@ -81,8 +81,14 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
+" biovim
+nnoremap <leader>R :set operatorfunc=RcOperator<cr>g@
+vnoremap <leader>R :<c-u>call RcOperator(visualmode())<cr>
 
 " let g:netrw_liststyle = 3
 " let g:netrw_banner = 0
 " let g:netrw_winsize = 25
 "let g:netrw_browse_split = 1
+
+" ALE Fixers
+let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
