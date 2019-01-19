@@ -1,3 +1,18 @@
+snippet ifile
+:file:\`$0\`
+endsnippet
+
+snippet icode
+:code:\`$0\`
+endsnippet
+
+snippet bshell
+.. code:: shell
+   :caption: $1
+
+   $0
+endsnippet
+
 snippet req
 .. item:: $1 $2
 
@@ -57,13 +72,70 @@ snippet shell
   $0
 endsnippet
 
+snippet cd
+:code:`$0`
+endsnippet
+
 snippet imps
 .. item:: ImperoSDS$1
 
   $0
 endsnippet
 
+snippet inhouse
+DLBCL Assay Software Inhouse 
+endsnippet
+
+snippet clinical
+DLBCL Assay Software Clinical
+endsnippet
+
+
 snippet rctst
 .. item:: RCTST$1 $3
   :tests: $2
+endsnippet
+
+snippet pass
+        +-------------+--------------------------------------------------------+
+        | PASS/FAIL   | Notes                                                  |
+        +-------------+--------------------------------------------------------+
+        |             |                                                        |
+        |             |                                                        |
+        +-------------+--------------------------------------------------------+
+endsnippet
+
+snippet testcase
+#########
+$1
+#########
+
+*****************
+Setup Information
+*****************
+.. list-table:: 
+
+  * - Software Version
+    - 
+  * - MiSeqDX Serial Number
+    -
+  * - MiSeqDX LRM Version Number
+    -
+  * - MiSeqDX MOS Version Number
+    -
+
+************
+Requirements
+************
+$2
+
+*********
+Objective
+*********
+$3
+
+*********
+Procedure
+*********
+$4
 endsnippet

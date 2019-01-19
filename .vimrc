@@ -52,6 +52,8 @@ while i <= 9
     let i = i + 1
 endwhile
 
+" Keep swap files centrally to stop polluting code dirs
+set directory=$HOME/.vim/swap/
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -92,3 +94,6 @@ vnoremap <leader>R :<c-u>call RcOperator(visualmode())<cr>
 
 " ALE Fixers
 let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
+
+" FZF
+set rtp+=/usr/local/opt/fzf
