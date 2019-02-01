@@ -69,6 +69,8 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 
 let g:syntastic_rst_checkers = ["sphinx"]
 
+let g:rst_fold_enabled = 1
+
 " vim-airline
 set laststatus=2 " Show status immediately
 let g:airline_section_warning=""
@@ -97,3 +99,6 @@ let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
 
 " FZF
 set rtp+=/usr/local/opt/fzf
+
+" Ack/ag
+let g:ackprg = 'ag --vimgrep'
