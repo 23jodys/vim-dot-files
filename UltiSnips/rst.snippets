@@ -1,25 +1,43 @@
-snippet req
+snippet ifile
+:file:\`$0\`
+endsnippet
 
-.. item:: $1 [$2]
+snippet icode
+:code:\`$0\`
+endsnippet
+
+snippet bshell
+.. code:: shell
+   :caption: $1
 
    $0
-
 endsnippet
 
-snippet 62
-(62304:2006 $1)
+snippet req
+.. item:: $1 $2
+
+   $0
 endsnippet
 
+snippet haz
+.. item:: CIHAZ$1 $2
+
+   $0
+endsnippet
+
+snippet rsk
+.. item:: CGRSK$1 $2
+
+   $0
+endsnippet
 
 snippet spec
+.. item:: CISDS$1 $2
 
-.. _$1:
-
-:Tag: $1
-:Short: $2
-:Trace: $3
-:Description: $0
-
+   $0
+endsnippet
+snippet 62
+(62304:2006 $1)
 endsnippet
 
 snippet def
@@ -35,22 +53,89 @@ snippet defref
 :ref:\`$1 <$1>\`
 endsnippet
 
-snippet header
-.. _$1:
+snippet termref
+:term:`$1`
+endsnippet
 
+snippet term
+  $1
+    $0
+endsnippet
+
+snippet vimrst
+.. vim: set tabstop=4 sw=4 expandtab filetype=rst:
+endsnippet
+
+snippet shell
+.. code-block:: shell
+  
+  $0
+endsnippet
+
+snippet cd
+:code:`$0`
+endsnippet
+
+snippet imps
+.. item:: ImperoSDS$1
+
+  $0
+endsnippet
+
+snippet inhouse
+DLBCL Assay Software Inhouse 
+endsnippet
+
+snippet clinical
+DLBCL Assay Software Clinical
+endsnippet
+
+
+snippet rctst
+.. item:: RCTST$1 $3
+  :tests: $2
+endsnippet
+
+snippet pass
+        +-------------+--------------------------------------------------------+
+        | PASS/FAIL   | Notes                                                  |
+        +-------------+--------------------------------------------------------+
+        |             |                                                        |
+        |             |                                                        |
+        +-------------+--------------------------------------------------------+
+endsnippet
+
+snippet testcase
+#########
 $1
+#########
 
-endsnippet
+*****************
+Setup Information
+*****************
+.. list-table:: 
 
-snippet stimulus
+  * - Software Version
+    - 
+  * - MiSeqDX Serial Number
+    -
+  * - MiSeqDX LRM Version Number
+    -
+  * - MiSeqDX MOS Version Number
+    -
 
-.. _$1:
+************
+Requirements
+************
+$2
 
-#. $1
-  :Description:
+*********
+Objective
+*********
+$3
 
-endsnippet
-
-snippet vim
-.. vim: set tabstop=3 sw=3 filetype=rst:
+*********
+Procedure
+*********
+$4
 endsnippet

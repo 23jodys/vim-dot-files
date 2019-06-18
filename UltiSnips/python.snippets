@@ -1,13 +1,11 @@
 snippet future
-from __future__ import print_function, division
+from __future__ import print_function, division, absolute_import
 endsnippet
 
 snippet doc
 __author__ = "Jody Stephens"
 __copyright__ = "Copyright ${1:`date +%Y`}, ArcherDX"
 __credits__ = ["Jody Stephens"]
-__maintainer__ = "Jody Stephens"
-__email__ = "jstephens@archerdx.com"
 endsnippet
 
 snippet class
@@ -29,6 +27,11 @@ endsnippet
 snippet def
 def $1(self, $2):
     
+endsnippet
+
+snippet tm
+def test_$1(self):
+    """$0"""
 endsnippet
 
 snippet set
@@ -81,4 +84,34 @@ $1
 endsnippet
 snippet defref
 :ref:\`$1 <$1>\`
+endsnippet
+
+snippet icv
+.. item:: system_test.custom.ignyta.$1
+  :$2: $3
+
+  $0
+endsnippet
+
+snippet raiser
+try:
+    import $1
+except ImportError as import_error:
+    $1 = delayed_raiser(import_error)
+endsnippet
+
+snippet draiser
+try:
+    from $1 import $2
+except ImportError as import_error:
+    $2 = delayed_raiser(import_error)
+endsnippet
+
+snippet s
+$1=self.$1,
+endsnippet
+
+snippet ifmain
+if __name__ == '__main__':
+    main($0)
 endsnippet

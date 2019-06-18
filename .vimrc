@@ -52,6 +52,8 @@ while i <= 9
     let i = i + 1
 endwhile
 
+" Keep swap files centrally to stop polluting code dirs
+set directory=$HOME/.vim/swap/
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -67,6 +69,8 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 
 let g:syntastic_rst_checkers = ["sphinx"]
 
+let g:rst_fold_enabled = 1
+
 " vim-airline
 set laststatus=2 " Show status immediately
 let g:airline_section_warning=""
@@ -81,8 +85,20 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
+" biovim
+nnoremap <leader>R :set operatorfunc=RcOperator<cr>g@
+vnoremap <leader>R :<c-u>call RcOperator(visualmode())<cr>
 
 " let g:netrw_liststyle = 3
 " let g:netrw_banner = 0
 " let g:netrw_winsize = 25
 "let g:netrw_browse_split = 1
+
+" ALE Fixers
+let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+
+" Ack/ag
+let g:ackprg = 'ag --vimgrep'
