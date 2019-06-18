@@ -55,3 +55,6 @@
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = git@github.com:tpope/vim-vinegar.git
+[submodule "bundle/vim-gcov-marker"]
+	path = bundle/vim-gcov-marker
+	url = https://github.com/m42e/vim-gcov-marker.git
