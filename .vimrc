@@ -15,8 +15,8 @@ filetype on
 syntax on
 
 colorscheme solarized
-"set background=light
-set background=dark
+set background=light
+"set background=dark
 
 let mapleader = "\<Space>"
 
@@ -52,6 +52,8 @@ while i <= 9
     let i = i + 1
 endwhile
 
+" Keep swap files centrally to stop polluting code dirs
+set directory=$HOME/.vim/swap/
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -66,6 +68,8 @@ let g:syntastic_python_pylint_post_args="--max-line-length=120"
 let g:syntastic_python_flake8_args='--ignore=E501'
 
 let g:syntastic_rst_checkers = ["sphinx"]
+
+let g:rst_fold_enabled = 1
 
 " vim-airline
 set laststatus=2 " Show status immediately
@@ -84,14 +88,16 @@ let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 " Grade/Syntastic
 let g:syntastic_java_checkers=['javac']
 let g:syntastic_java_javac_config_file_enabled = 1
+"
+" biovim
+nnoremap <leader>R :set operatorfunc=RcOperator<cr>g@
+vnoremap <leader>R :<c-u>call RcOperator(visualmode())<cr>
 
-<<<<<<< HEAD
-" Javacomplete
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-set completeopt=longest,menuone
-=======
-" let g:netrw_liststyle = 3
-" let g:netrw_banner = 0
-" let g:netrw_winsize = 25
-"let g:netrw_browse_split = 1
->>>>>>> 818d806276b6903635a93db5ba33382fe86d2879
+" ALE Fixers
+let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+
+" Ack/ag
+let g:ackprg = 'ag --vimgrep'

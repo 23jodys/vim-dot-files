@@ -1,0 +1,10 @@
+:RstReset	ft_rst.txt	/*:RstReset*
+ft_rst.txt	ft_rst.txt	/*ft_rst.txt*
+rst-add	ft_rst.txt	/*rst-add*
+rst-customise	ft_rst.txt	/*rst-customise*
+rst-folding	ft_rst.txt	/*rst-folding*
+rst-install	ft_rst.txt	/*rst-install*
+rst-modify	ft_rst.txt	/*rst-modify*
+rst-navigation	ft_rst.txt	/*rst-navigation*
+rst-references	ft_rst.txt	/*rst-references*
+rst-toc	ft_rst.txt	/*rst-toc*

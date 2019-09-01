@@ -1,0 +1,23 @@
+snippet back
+.PHONY: $1
+$1: \$(__release_build_dir)$1
+
+\$(__release_build_dir)$1: $2
+	$3
+endsnippet
+
+snippet ndef
+$(call ndef,$1,$2)
+endsnippet
+
+snippet ghelp
+__GLOBAL_HELP += "$0"
+endsnippet
+
+snippet vhelp
+__VERBOSE_HELP += "$0"
+endsnippet
+
+snippet wvar
+$(warning $1: '\$($1)')
+endsnippet
