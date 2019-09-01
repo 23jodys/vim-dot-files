@@ -73,3 +73,6 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki/
+[submodule "bundle/riv.vim"]
+	path = bundle/riv.vim
+	url = https://github.com/gu-fan/riv.vim/
