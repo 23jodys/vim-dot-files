@@ -1,4 +1,3 @@
-
 " turn filetype detection off and, even if it's not strictly
 " necessary, disable loading of indent scripts and filetype plugins
 filetype off
@@ -70,6 +69,7 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 let g:syntastic_rst_checkers = ["sphinx"]
 
 let g:rst_fold_enabled = 1
+let g:riv_disable_folding = 0
 
 " vim-airline
 set laststatus=2 " Show status immediately
@@ -100,4 +100,10 @@ let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
 set rtp+=/usr/local/opt/fzf
 
 " Ack/ag
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'ag --vimgrep --smart-case'                                                   
+cnoreabbrev ag Ack                                                                           
+cnoreabbrev aG Ack                                                                           
+cnoreabbrev Ag Ack                                                                           
+cnoreabbrev AG Ack
+let g:riv_section_levels='#*=-^"'
+let g:riv_ignored_imaps = "<Tab>,<S-Tab>"
