@@ -85,13 +85,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
-" Grade/Syntastic
-let g:syntastic_java_checkers=['javac']
-let g:syntastic_java_javac_config_file_enabled = 1
-"
-" biovim
-nnoremap <leader>R :set operatorfunc=RcOperator<cr>g@
-vnoremap <leader>R :<c-u>call RcOperator(visualmode())<cr>
 
 " ALE Fixers
 let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
