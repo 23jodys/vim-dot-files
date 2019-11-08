@@ -52,9 +52,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/biovim"]
-	path = bundle/biovim
-	url = https://github.com/stveep/biovim.git
 [submodule "bundle/salt-vim"]
 	path = bundle/salt-vim
 	url = https://github.com/saltstack/salt-vim.git
@@ -73,3 +70,9 @@
 [submodule "bundle/riv.vim"]
 	path = bundle/riv.vim
 	url = https://github.com/gu-fan/riv.vim/
+[submodule "/Users/jstephens/.vim/bundle/taskwiki"]
+	path = /Users/jstephens/.vim/bundle/taskwiki
+	url = https://github.com/tbabej/taskwiki
+[submodule "bundle/vim-taskwarrior"]
+	path = bundle/vim-taskwarrior
+	url = https://github.com/blindFS/vim-taskwarrior.git

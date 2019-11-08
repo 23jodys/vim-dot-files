@@ -98,6 +98,9 @@ let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
 
 " FZF
 set rtp+=/usr/local/opt/fzf
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>b :Buffers<CR>
+
 
 " Ack/ag
 let g:ackprg = 'ag --vimgrep --smart-case'                                                   
@@ -107,3 +110,29 @@ cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
 let g:riv_section_levels='#*=-^"'
 let g:riv_ignored_imaps = "<Tab>,<S-Tab>"
+
+" Custom vimwiki
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:vimwiki_table_mappings = 0
+function! VimwikiLinkHandler(link)
+  " Use Vim to open external files with the 'vfile:' scheme.  E.g.:
+  "   1) [[vfile:~/Code/PythonProject/abc123.py]]
+  "   2) [[vfile:./|Wiki Home]]
+  let link = a:link
+  if link =~# '^vfile:'
+    let link = link[1:]
+  else
+    return 0
+  endif
+  let link_infos = vimwiki#base#resolve_link(link)
+  if link_infos.filename == ''
+    echomsg 'Vimwiki Error: Unable to resolve link!'
+    return 0
+  else
+    exe 'edit ' . fnameescape(link_infos.filename)
+    return 1
+  endif
+endfunction
+
+" task 
+let g:task_default_prompt = ['description']
