@@ -80,6 +80,7 @@ let g:airline_section_y=""
 set path=~/src/**
 
 " Ultisnips
+let g:python3_host_prog = '/usr/local/bin/python3'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
