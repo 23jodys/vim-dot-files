@@ -77,5 +77,8 @@
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki/
 [submodule "vim-rst-tables-py3"]
-	path = vim-rst-tables-py3
+	path = bundle/vim-rst-tables-py3
 	url = https://github.com/ossobv/vim-rst-tables-py3.git
+[submodule "bundle/vim-rst-sections"]
+	path = bundle/vim-rst-sections
+	url = https://github.com/matthew-brett/vim-rst-sections.git
