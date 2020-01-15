@@ -95,3 +95,7 @@ set rtp+=/usr/local/opt/fzf
 
 " Ack/ag
 let g:ackprg = 'ag --vimgrep'
+
+" persistent undo
+set undodir=~/.vim/undodir/
+set undofile
