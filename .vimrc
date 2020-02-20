@@ -79,6 +79,11 @@ let g:airline_section_y=""
 " ArcherDX
 set path=~/src/**
 
+" vimwiki
+
+let g:vimwiki_list = [{'path': '~/OmniPresence/vimwiki/', 'path_html': '~/OmniPresence/vimwiki_html/'}]
+let g:vimwiki_folding = 1
+
 " Ultisnips
 let g:python3_host_prog = '/usr/local/bin/python3'
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -92,9 +97,16 @@ let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
 
 " FZF
 set rtp+=/usr/local/opt/fzf
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>b :Buffers<CR>
 
 " Ack/ag
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+
 
 " persistent undo
 set undodir=~/.vim/undodir/
