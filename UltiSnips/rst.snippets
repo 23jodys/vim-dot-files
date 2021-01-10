@@ -96,46 +96,10 @@ snippet rctst
   :tests: $2
 endsnippet
 
-snippet pass
-        +-------------+--------------------------------------------------------+
-        | PASS/FAIL   | Notes                                                  |
-        +-------------+--------------------------------------------------------+
-        |             |                                                        |
-        |             |                                                        |
-        +-------------+--------------------------------------------------------+
+snippet tabcol
+.. tabularcolumns:: |\X{$1}{$2}|$0
 endsnippet
 
-snippet testcase
-#########
-$1
-#########
-
-*****************
-Setup Information
-*****************
-.. list-table:: 
-
-  * - Software Version
-    - 
-  * - MiSeqDX Serial Number
-    -
-  * - MiSeqDX LRM Version Number
-    -
-  * - MiSeqDX MOS Version Number
-    -
-
-************
-Requirements
-************
-$2
-
-*********
-Objective
-*********
-$3
-
-*********
-Procedure
-*********
-$4
+snippet ghivd
+https://github.com/archerdxinc/ivd/issues/$1
 endsnippet

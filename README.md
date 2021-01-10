@@ -1,7 +1,11 @@
 # vim-dot-files
 
-I think my two dependencies are flake8 and jedi
+## Python Dependencies
 
 ```
 pip install jedi flake8
 ```
+
+## Other dependencies
+
+None
