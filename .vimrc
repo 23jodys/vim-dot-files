@@ -14,9 +14,13 @@ filetype plugin indent on
 filetype on
 syntax on
 
-colorscheme solarized
-set background=light
-"set background=dark
+" Project specific vimrc
+set exrc
+set secure
+
+" colorscheme solarized
+"set background=light
+set background=dark
 
 let mapleader = "\<Space>"
 
@@ -82,7 +86,6 @@ set path=~/src/**
 " vimwiki
 
 let g:vimwiki_list = [{'path': '~/OmniPresence/vimwiki/', 'path_html': '~/OmniPresence/vimwiki_html/'}]
-let g:vimwiki_folding = 1
 
 " Ultisnips
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -94,6 +97,7 @@ let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 
 " ALE Fixers
 let g:ale_fixers = {'python': ['autopep8', 'isort'], 'json': ['fixjson']}
+let g:ale_c_cc_options = "-std=c99 -Wall -I/usr/local/include"
 
 " FZF
 set rtp+=/usr/local/opt/fzf
