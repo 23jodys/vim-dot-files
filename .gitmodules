@@ -82,3 +82,6 @@
 [submodule "bundle/vim-rst-sections"]
 	path = bundle/vim-rst-sections
 	url = https://github.com/matthew-brett/vim-rst-sections.git
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform
