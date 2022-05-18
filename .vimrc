@@ -14,9 +14,9 @@ filetype plugin indent on
 filetype on
 syntax on
 
-colorscheme solarized
-set background=light
-"set background=dark
+" colorscheme solarized
+" set background=light
+set background=dark
 
 let mapleader = "\<Space>"
 
