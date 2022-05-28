@@ -17,7 +17,7 @@ syntax on
 " Project specific vimrc
 set exrc
 set secure
-set background=dark
+set background=light
 
 let mapleader = "\<Space>"
 
