@@ -18,6 +18,9 @@ syntax on
 set exrc
 set secure
 set background=light
+"set background=dark
+
+colorscheme solarized
 
 let mapleader = "\<Space>"
 
