@@ -85,3 +85,9 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform
+[submodule "bundle/vim-chatgpt"]
+	path = bundle/vim-chatgpt
+	url = git@github.com:CoderCookE/vim-chatgpt.git
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
+	url = git@github.com:Konfekt/FastFold.git
